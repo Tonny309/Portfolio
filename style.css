@@ -107,7 +107,7 @@ section {
   overflow: hidden;
 }
 
-.home::before {
+ .home::before {
   content: "";
   position: absolute;
   top: 0;
@@ -117,7 +117,7 @@ section {
   background: url(cybersec.jpg) no-repeat center center/cover;
   opacity: 0.3; /* fade effect */
   z-index: 1;
-}
+} 
 
 .home h1 {
   font-size: 3rem;
