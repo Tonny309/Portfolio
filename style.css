@@ -117,6 +117,7 @@ section {
   background: url(cybersec.jpg) no-repeat center center/cover;
   opacity: 0.3; /* fade effect */
   z-index: 1;
+  
 } 
 
 .home h1 {
