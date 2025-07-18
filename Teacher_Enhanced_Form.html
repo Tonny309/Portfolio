@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teacher's Form with Tables, Frames, and Lists</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f9f9f9;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        select,
+        textarea,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        ul, ol {
+            margin-top: 20px;
+            padding-left: 40px;
+        }
+        iframe {
+            margin-top: 20px;
+            border: 2px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<!-- FORM TAGS -->
+<h2>Registration Form</h2>
+<form action="/action_page.php" method="post">
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="firstname" required>
+
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="regno">Registration Number:</label>
+    <input type="text" id="regno" name="regno" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="8" required>
+
+    <label for="confirmpassword">Confirm Password:</label>
+    <input type="password" id="confirmpassword" name="confirmpassword" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <label for="department">Department:</label>
+    <select id="department" name="department">
+        <option value="ict">ICT</option>
+        <option value="business">Business</option>
+        <option value="engineering">Engineering</option>
+    </select><br><br>
+
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here..."></textarea><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<!-- TABLE TAGS -->
+<h2>Student Marks Table</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Registration Number</th>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ICT001</td>
+            <td>Jane Doe</td>
+            <td>Mathematics</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>ICT002</td>
+            <td>John Smith</td>
+            <td>Science</td>
+            <td>90</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- LIST TAGS -->
+<h2>Unordered List of Subjects</h2>
+<ul>
+    <li>Mathematics</li>
+    <li>English</li>
+    <li>Computer Studies</li>
+    <li>Biology</li>
+</ul>
+
+<h2>Ordered List of Instructions</h2>
+<ol>
+    <li>Fill out the form.</li>
+    <li>Check your entries.</li>
+    <li>Submit the form.</li>
+    <li>Print your confirmation.</li>
+</ol>
+
+<!-- FRAME TAGS (Note: <frameset> is obsolete in HTML5 and not supported in modern browsers) -->
+<h2>Frameset Example (Obsolete HTML)</h2>
+<p><em>Note: Frames are outdated and should not be used in modern web design.</em></p>
+<iframe src="https://www.example.com" width="500" height="300" title="Example Frame">
+    Your browser does not support iframes.
+</iframe>
+
+</body>
+</html>
